@@ -3,7 +3,7 @@ This [dashboard](https://nguyenquocduong.shinyapps.io/NCKH/) shows recent develo
 
 # The COVID-19 Dashboard**
 
-This COVID-19 dashboard is built with R using the Rmakrdown framework and Shiny app. Developed by [Nguy???n Qu???c Duong](https://www.facebook.com/nguyenquocduongmath/) based on the coronavirus dashboard by Rami Krispin. The code behind the dashboard available [here](https://github.com/nguyenquocduongqnu/NCKH_COVID19).
+This COVID-19 dashboard is built with R using the Rmakrdown framework and Shiny app.
 
 # Data
 
