@@ -21,12 +21,14 @@ body_overview <- dashboardBody(
         ),
         class = "map",
         width = 8,
+        height = 9,
         style = 'padding:0px;'
       ),
       column(
         uiOutput("summaryTables"),
         class = "summary",
         width = 4,
+        height = 12,
         style = 'padding:0px;'
       ),
       column(

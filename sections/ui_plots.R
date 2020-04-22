@@ -3,16 +3,6 @@ body_plots <- dashboardBody(
     fluidRow(
       fluidRow(
         box(
-          title = "Evolution of Cases since Outbreak",
-          plotlyOutput("case_evolution"),
-          column(
-            checkboxInput("checkbox_logCaseEvolution", label = "Logarithmic Y-Axis", value = FALSE),
-            width = 3,
-            style = "float: right; padding: 10px; margin-right: 50px"
-          ),
-          width = 6
-        ),
-        box(
           title = "New cases",
           plotlyOutput("case_evolution_new"),
           column(
@@ -25,7 +15,7 @@ body_plots <- dashboardBody(
           confirmed cases."),
             width = 7
           ),
-          width = 6
+          width = 12
         )
       ),
       fluidRow(
@@ -44,50 +34,7 @@ body_plots <- dashboardBody(
               style = "float: right; padding: 10px; margin-right: 50px"
             )
           ),
-          width = 6
-        ),
-        box(
-          title = "Evolution of Cases since 10th/100th case",
-          plotlyOutput("case_evolution_after100"),
-          fluidRow(
-            column(
-              uiOutput("selectize_casesByCountriesAfter100th"),
-              width = 3,
-            ),
-            column(
-              uiOutput("selectize_casesSince100th"),
-              width = 3
-            ),
-            column(
-              checkboxInput("checkbox_logCaseEvolution100th", label = "Logarithmic Y-Axis", value = FALSE),
-              checkboxInput("checkbox_per100kEvolutionCountry100th", label = "Per Population", value = FALSE),
-              width = 3,
-              style = "float: right; padding: 10px; margin-right: 50px"
-            )
-          ),
-          width = 6
-        )
-      ),
-      fluidRow(
-        box(
-          title = "Evolution of Doubling Times per Country",
-          plotlyOutput("plot_doublingTime"),
-          fluidRow(
-            column(
-              uiOutput("selectize_doublingTime_Country"),
-              width = 3,
-            ),
-            column(
-              uiOutput("selectize_doublingTime_Variable"),
-              width = 3,
-            ),
-            column(width = 3),
-            column(
-              div("Note: The doubling time is calculated based on the growth rate over the last seven days.",
-                style = "padding-top: 15px;"),
-              width = 3
-            )
-          )
+          width = 12
         )
       )
     )

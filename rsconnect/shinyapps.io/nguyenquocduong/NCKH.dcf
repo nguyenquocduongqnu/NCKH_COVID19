@@ -5,8 +5,8 @@ account: nguyenquocduong
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2151596
-bundleId: 3048185
+bundleId: 3049390
 url: https://nguyenquocduong.shinyapps.io/NCKH/
-when: 1587534210.88306
+when: 1587555410.36259
 asMultiple: FALSE
 asStatic: FALSE
