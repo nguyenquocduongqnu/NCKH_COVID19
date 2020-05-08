@@ -1,7 +1,8 @@
-  capFirst <- function(x) {
+#Nguyen Quoc Duong
+capFirst <- function(x) {
   s <- strsplit(x, " ")[[1]]
   paste(toupper(substring(s, 1, 1)), substring(s, 2),
-    sep = "", collapse = " ")
+        sep = "", collapse = " ")
 }
 
 # This function helps to source multiple files which are in the same directory. Just provide it with a path and all .R files in the directory it is
