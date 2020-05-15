@@ -1,11 +1,10 @@
-#Nguyen Quoc Duong
-source("UI/ui_overview.R", local = TRUE)
-source("UI/ui_plots.R", local = TRUE)
-source("UI/ui_about.R", local = TRUE)
-source("UI/ui_fullTable.R", local = TRUE)
+source("sections/ui_overview.R", local = TRUE)
+source("sections/ui_plots.R", local = TRUE)
+source("sections/ui_about.R", local = TRUE)
+source("sections/ui_fullTable.R", local = TRUE)
 
 ui <- fluidPage(
-  title = "COVID-19 Dashboard",
+  title = "COVID-19 Dashboard ",
   tags$head(
     tags$link(rel = "shortcut icon", type = "image/png", href = "logo.png")
   ),
@@ -25,7 +24,7 @@ ui <- fluidPage(
     tabPanel("Plots", page_plots, value = "page-plots"),
     tabPanel("About", page_about, value = "page-about"),
     tags$script(HTML("var header = $('.navbar > .container-fluid');
-    header.append('<div style=\"float:right\"><a target=\"_blank\" href=\"https://github.com/nguyenquocduongqnu/NCKH_COVID19\"logo.png\" alt=\"alt\" style=\"float:right;width:33px;padding-top:10px;margin-top:-50px;margin-right:10px\"> </a></div>');
+    header.append('<div style=\"float:right\"><a target=\"_blank\" href=\"https://github.com/nguyenquocduongqnu/NCKH_COVID19\"><img src=\"logo.png\" alt=\"alt\" style=\"float:right;width:33px;padding-top:10px;margin-top:-50px;margin-right:10px\"> </a></div>');
     console.log(header)")
     )
   )
